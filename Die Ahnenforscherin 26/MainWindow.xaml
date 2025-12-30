@@ -20,12 +20,12 @@
                   IsBackButtonVisible="True"
                   IsPaneToggleButtonVisible="True">
             <TitleBar.IconSource>
-                <ImageIconSource ImageSource="\Images\Square44x44Logo.targetsize-24_altform-unplated.png" />
+                <ImageIconSource ImageSource="Icons\Logo for a genealogy.png" />
             </TitleBar.IconSource>
             <TitleBar.Content>
-                <AutoSuggestBox Width="360"
+                <AutoSuggestBox Width="420"
                                 VerticalAlignment="Center"
-                                PlaceholderText="Suche nach.."
+                                PlaceholderText="Durchsuche meinen Stammbaum nach..."
                                 QueryIcon="Find" />
             </TitleBar.Content>
             <TitleBar.RightHeader>
@@ -34,5 +34,7 @@
                                Initials="taj" />
             </TitleBar.RightHeader>
         </TitleBar>
+        <Frame Grid.Row="1"
+               x:Name="ContentFrame" />
     </Grid>
 </Window>
