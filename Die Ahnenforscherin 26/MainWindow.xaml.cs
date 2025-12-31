@@ -13,6 +13,7 @@ namespace Die_Ahnenforscherin_26
         public MainWindow()
         {
             InitializeComponent();
+            this.ExtendsContentIntoTitleBar = true;
         }
     }
 }

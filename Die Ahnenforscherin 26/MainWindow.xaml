@@ -16,12 +16,13 @@
             <RowDefinition Height="*" />
         </Grid.RowDefinitions>
         <TitleBar Title="Die Ahnenforscherin"
-                  Subtitle="Debug - vorschauversion"
-                  IsBackButtonVisible="True"
-                  IsPaneToggleButtonVisible="True">
+                  Subtitle="Debug-Version"
+                  IsBackButtonVisible="False"
+                  IsPaneToggleButtonVisible="False"
+                  Height="48">
             <TitleBar.IconSource>
                 <!-- TODO: Fix Width -->
-                <ImageIconSource ImageSource="Icons\Logo for a genealogy.png" />
+                <ImageIconSource ImageSource="/Assets/Logo for Genealogy.png" />
             </TitleBar.IconSource>
             <TitleBar.Content>
                 <AutoSuggestBox HorizontalAlignment="Stretch"
