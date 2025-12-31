@@ -16,22 +16,23 @@
             <RowDefinition Height="*" />
         </Grid.RowDefinitions>
         <TitleBar Title="Die Ahnenforscherin"
-                  Subtitle="Vorschau"
+                  Subtitle="Debug - vorschauversion"
                   IsBackButtonVisible="True"
                   IsPaneToggleButtonVisible="True">
             <TitleBar.IconSource>
+                <!-- TODO: Fix Width -->
                 <ImageIconSource ImageSource="Icons\Logo for a genealogy.png" />
             </TitleBar.IconSource>
             <TitleBar.Content>
-                <AutoSuggestBox Width="420"
-                                VerticalAlignment="Center"
-                                PlaceholderText="Durchsuche meinen Stammbaum nach..."
+                <AutoSuggestBox VerticalAlignment="Stretch"
+                                HorizontalAlignment="Stretch"
+                                PlaceholderText="Suche im Stammbaum, nach Anleitungen oder Hilfe..."
                                 QueryIcon="Find" />
             </TitleBar.Content>
             <TitleBar.RightHeader>
                 <PersonPicture Width="30"
                                Height="30"
-                               Initials="taj" />
+                               Initials="n/a" />
             </TitleBar.RightHeader>
         </TitleBar>
         <Frame Grid.Row="1"
