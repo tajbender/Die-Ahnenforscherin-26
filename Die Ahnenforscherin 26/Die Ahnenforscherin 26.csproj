@@ -29,6 +29,16 @@
     <PackageReference Include="Microsoft.WindowsAppSDK" Version="1.8.251106002" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Assets\Themes\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Update="Assets\Logo for Genealogy.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
     <!-- Publish Properties -->
   <PropertyGroup>
     <PublishReadyToRun Condition="'$(Configuration)' == 'Debug'">False</PublishReadyToRun>

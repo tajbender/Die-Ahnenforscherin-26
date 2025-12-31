@@ -24,18 +24,18 @@
                 <ImageIconSource ImageSource="Icons\Logo for a genealogy.png" />
             </TitleBar.IconSource>
             <TitleBar.Content>
-                <AutoSuggestBox VerticalAlignment="Stretch"
-                                HorizontalAlignment="Stretch"
+                <AutoSuggestBox HorizontalAlignment="Stretch"
                                 PlaceholderText="Suche im Stammbaum, nach Anleitungen oder Hilfe..."
-                                QueryIcon="Find" />
+                                QueryIcon="Find"
+                                VerticalAlignment="Stretch" />
             </TitleBar.Content>
             <TitleBar.RightHeader>
-                <PersonPicture Width="30"
-                               Height="30"
-                               Initials="n/a" />
+                <PersonPicture Height="Auto"
+                               Initials="n/a"
+                               Width="Auto" />
             </TitleBar.RightHeader>
         </TitleBar>
         <Frame Grid.Row="1"
-               x:Name="ContentFrame" />
+               x:Name="ContentFrame"></Frame>
     </Grid>
 </Window>
