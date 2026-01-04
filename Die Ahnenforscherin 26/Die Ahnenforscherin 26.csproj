@@ -32,6 +32,7 @@
 
   <ItemGroup>
     <Folder Include="Assets\Themes\" />
+    <Folder Include="Pages\" />
   </ItemGroup>
 
   <ItemGroup>

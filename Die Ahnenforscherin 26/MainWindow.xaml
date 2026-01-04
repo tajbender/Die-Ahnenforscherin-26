@@ -36,7 +36,38 @@
                                Width="Auto" />
             </TitleBar.RightHeader>
         </TitleBar>
-        <Frame Grid.Row="1"
-               x:Name="ContentFrame"></Frame>
+        <NavigationView x:Name="NavigataionView"
+                        Grid.Row="1"
+                        Header="Die Ahnenforscherin"
+                        IsSettingsVisible="True"
+                        PaneDisplayMode="Left">
+            <!-- SelectionChanged="NavigationView_SelectionChanged" -->
+            <NavigationView.MenuItems>
+                <NavigationViewItem Content="Browse"
+                                    Tag="SamplePage1"
+                                    Icon="Library" />
+                <NavigationViewItem Content="Track an Order"
+                                    Tag="SamplePage2"
+                                    Icon="Map" />
+                <NavigationViewItem Content="Order History"
+                                    Tag="SamplePage3"
+                                    Icon="Tag" />
+            </NavigationView.MenuItems>
+            <NavigationView.FooterMenuItems>
+                <NavigationViewItem Content="Account"
+                                    Tag="SamplePage4"
+                                    Icon="Contact" />
+                <NavigationViewItem Content="Your Cart"
+                                    Tag="SamplePage5"
+                                    Icon="Shop" />
+                <NavigationViewItem Content="Help"
+                                    Tag="SamplePage5"
+                                    Icon="Help" />
+            </NavigationView.FooterMenuItems>
+            <Frame x:Name="ContentFrame">
+<!--                <Frame.Content>
+                    <local:SamplePage1 /> -->
+            </Frame>
+        </NavigationView>
     </Grid>
 </Window>
