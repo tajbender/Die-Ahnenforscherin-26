@@ -19,6 +19,9 @@
     <Page Remove="Assets\Icons\**" />
     <PRIResource Remove="Assets\Icons\**" />
   </ItemGroup>
+  <ItemGroup>
+    <None Remove="Pages\WorkbenchPage.xaml" />
+  </ItemGroup>
 
   <ItemGroup>
     <Manifest Include="$(ApplicationManifest)" />
@@ -39,6 +42,12 @@
     <Content Update="Assets\Logo for Genealogy.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Page Update="Pages\WorkbenchPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
 
     <!-- Publish Properties -->
