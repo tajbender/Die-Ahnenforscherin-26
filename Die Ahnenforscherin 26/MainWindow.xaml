@@ -36,12 +36,12 @@
                                Width="Auto" />
             </TitleBar.RightHeader>
         </TitleBar>
-        <NavigationView x:Name="NavigataionView"
+        <NavigationView x:Name="NavigationView"
                         Grid.Row="1"
                         Header="Die Ahnenforscherin"
                         IsSettingsVisible="True"
-                        PaneDisplayMode="Left">
-            <!-- SelectionChanged="NavigationView_SelectionChanged" -->
+                        PaneDisplayMode="Left"
+                        SelectionChanged="NavigataionView_SelectionChanged">
             <NavigationView.MenuItems>
                 <NavigationViewItem Content="Browse"
                                     Tag="SamplePage1"
@@ -64,10 +64,13 @@
                                     Tag="SamplePage5"
                                     Icon="Help" />
             </NavigationView.FooterMenuItems>
-            <Frame x:Name="ContentFrame">
-<!--                <Frame.Content>
-                    <local:SamplePage1 /> -->
-            </Frame>
+            <ScrollViewer>
+                <Frame x:Name="ContentFrame">
+                    <Frame.Background>
+                        <SolidColorBrush Color="MediumVioletRed" />
+                    </Frame.Background>
+                </Frame>
+            </ScrollViewer>
         </NavigationView>
     </Grid>
 </Window>
