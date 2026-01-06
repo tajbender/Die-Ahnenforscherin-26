@@ -1,4 +1,8 @@
-## The Genealogy Detective 🕵️‍♀️✨ (English 🇬🇧)
+# Die Ahnenforscherin
+
+What does Die Ahnenforscherin mean?
+
+## The Genealogy Detective 🕵️‍♀️✨ ( English 🇬🇧 )
 A retro‑flavored companion for uncovering your family’s hidden stories
 Step into the world of The Genealogy Detective — a curious, sharp‑eyed heroine straight out of a vintage adventure comic. She’s clever, charming, and always ready to follow the next clue in your family’s past. Think magnifying glass, warm colors, soft paper texture… but powered by clean, modern tech 😄
 Whether you're mapping out your family tree or chasing down a mysterious ancestor, this app turns genealogy into a playful journey through time.
@@ -29,7 +33,7 @@ And because every family story is a treasure waiting to be uncovered — sometim
 Ideas, code, design, feedback — everything helps this little retro detective grow.
 Let’s make genealogy delightful together.
 
-Die Ahnenforscherin 🕵️‍♀️✨ (🇩🇪 README)
+## Die Ahnenforscherin 🕵️‍♀️✨ ( Deutsch 🇩🇪 )
 Deine retro‑inspirierte Begleiterin auf der Spur deiner Familiengeschichte
 Willkommen bei Die Ahnenforscherin — einer charmanten Heldin im Stil eines klassischen Abenteuer‑Comics. Neugierig, mutig, mit einem Augenzwinkern und immer bereit, die nächste Spur in deiner Familiengeschichte zu verfolgen.
 Ein Hauch Retro, ein bisschen Abenteuer, und jede Menge Herz 😄
