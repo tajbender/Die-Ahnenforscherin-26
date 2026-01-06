@@ -4,7 +4,9 @@ What does Die Ahnenforscherin mean? (...en version https://github.com/tajbender/
 
 
 
-https://github.com/tajbender/Die-Ahnenforscherin-26?tab=readme-ov-file#the-genealogy-detective-%EF%B8%8F%E2%80%8D%EF%B8%8F--english--
+English version: https://github.com/tajbender/Die-Ahnenforscherin-26?tab=readme-ov-file#the-genealogy-detective-%EF%B8%8F%E2%80%8D%EF%B8%8F--english--
+
+Deutsche Version: https://github.com/tajbender/Die-Ahnenforscherin-26?tab=readme-ov-file#die-ahnenforscherin-%EF%B8%8F%E2%80%8D%EF%B8%8F--deutsch--
 
 ## The Genealogy Detective 🕵️‍♀️✨ ( English 🇬🇧 )
 A retro‑flavored companion for uncovering your family’s hidden stories
