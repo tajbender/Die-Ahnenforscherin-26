@@ -14,6 +14,23 @@
     </Window.SystemBackdrop>
 
     <Grid>
-
+        <Border Background="{ThemeResource SystemControlBackgroundAltHighBrush}"
+                CornerRadius="12"
+                Padding="20"
+                Margin="20">
+            <StackPanel Spacing="10">
+                <TextBlock Text="Workbench"
+                           FontSize="24"
+                           FontWeight="Bold" />
+                <TextBlock Text="This is the workbench page where users can manage their projects."
+                           TextWrapping="Wrap" />
+                <Button Content="Create New Project"
+                        Width="200"
+                        Height="40" />
+                <Button Content="Open Existing Project"
+                        Width="200"
+                        Height="40" />
+            </StackPanel>
+        </Border>
     </Grid>
 </Window>
