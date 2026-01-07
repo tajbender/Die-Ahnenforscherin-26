@@ -69,14 +69,21 @@
                     <ColumnDefinition Width="640" />
                     <ColumnDefinition Width="320" />
                 </Grid.ColumnDefinitions>
-                <ScrollViewer Grid.Column="0">
+                <ScrollViewer x:Name="ContentFrameViewer" Grid.Column="0">
                     <Frame x:Name="ContentFrame">
                         <Frame.Background>
-                            <SolidColorBrush Color="MediumVioletRed" />
+                            <SolidColorBrush Color="SandyBrown" />
                         </Frame.Background>
+                        <StackPanel Orientation="Vertical"
+                                    HorizontalAlignment="Center">
+                            <TextBlock Text="Willkommen zur Debug-Version der Ahnenforscherin!"
+                                       FontSize="24"
+                                       FontWeight="Bold" />
+                            <Image Source="/Assets/SantaBenderBreakInPrison.jpg" />
+                        </StackPanel>
                     </Frame>
                 </ScrollViewer>
-                <CommandBar Grid.Column="0"
+                <CommandBar Grid.Column="1"
                             Background="Transparent"
                             IsOpen="False"
                             DefaultLabelPosition="Right">
