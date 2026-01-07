@@ -34,7 +34,7 @@ namespace Die_Ahnenforscherin_26
 
             // Play the default animation ContentFrame
             //ContentFrame.Navigate(typeof(WorkbenchPage), null);
-            this.ContentFrame.Navigate(typeof(WorkbenchPage), null);
+            //bool v = this.ContentFrame.Navigate(WorkbenchPage);
         }
     }
 }

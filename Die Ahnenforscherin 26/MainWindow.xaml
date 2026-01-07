@@ -64,13 +64,39 @@
                                     Tag="SamplePage5"
                                     Icon="Help" />
             </NavigationView.FooterMenuItems>
-            <ScrollViewer>
-                <Frame x:Name="ContentFrame">
-                    <Frame.Background>
-                        <SolidColorBrush Color="MediumVioletRed" />
-                    </Frame.Background>
-                </Frame>
-            </ScrollViewer>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="640" />
+                    <ColumnDefinition Width="320" />
+                </Grid.ColumnDefinitions>
+                <ScrollViewer Grid.Column="0">
+                    <Frame x:Name="ContentFrame">
+                        <Frame.Background>
+                            <SolidColorBrush Color="MediumVioletRed" />
+                        </Frame.Background>
+                    </Frame>
+                </ScrollViewer>
+                <CommandBar Grid.Column="0"
+                            Background="Transparent"
+                            IsOpen="False"
+                            DefaultLabelPosition="Right">
+                    <AppBarButton Icon="Add"
+                                  Label="Add" />
+                    <AppBarButton Icon="Edit"
+                                  Label="Edit" />
+                    <AppBarButton Icon="Share"
+                                  Label="Share" />
+                    <CommandBar.SecondaryCommands>
+                        <AppBarButton Icon="Setting"
+                                      Label="Settings">
+                            <AppBarButton.KeyboardAccelerators>
+                                <KeyboardAccelerator Modifiers="Control"
+                                                     Key="I" />
+                            </AppBarButton.KeyboardAccelerators>
+                        </AppBarButton>
+                    </CommandBar.SecondaryCommands>
+                </CommandBar>
+            </Grid>
         </NavigationView>
     </Grid>
 </Window>
