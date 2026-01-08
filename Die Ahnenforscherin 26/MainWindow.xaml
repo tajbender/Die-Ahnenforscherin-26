@@ -39,40 +39,48 @@
         <NavigationView x:Name="NavigationView"
                         Grid.Row="1"
                         Header="Die Ahnenforscherin"
-                        IsSettingsVisible="True"
+                        IsSettingsVisible="False"
                         PaneDisplayMode="Left"
                         SelectionChanged="NavigataionView_SelectionChanged">
             <NavigationView.MenuItems>
-                <NavigationViewItem Content="Browse"
+                <NavigationViewItem Content="Start"
                                     Tag="SamplePage1"
                                     Icon="Library" />
-                <NavigationViewItem Content="Track an Order"
+                <NavigationViewItem Content="Back 2 the past"
                                     Tag="SamplePage2"
                                     Icon="Map" />
-                <NavigationViewItem Content="Order History"
+                <NavigationViewItem Content="Back 2 the past"
                                     Tag="SamplePage3"
                                     Icon="Tag" />
             </NavigationView.MenuItems>
             <NavigationView.FooterMenuItems>
-                <NavigationViewItem Content="Account"
+                <NavigationViewItem Content="Benutzer"
                                     Tag="SamplePage4"
                                     Icon="Contact" />
-                <NavigationViewItem Content="Your Cart"
+                <NavigationViewItem Content="Clipboard"
+                                    Tag="SamplePage4"
+                                    Icon="XboxOneConsole" />
+                <NavigationViewItem Content="Datenbank"
                                     Tag="SamplePage5"
-                                    Icon="Shop" />
-                <NavigationViewItem Content="Help"
+                                    Icon="GlobalNavigationButton" />
+                <NavigationViewItem Content="Hilfe mir!..."
                                     Tag="SamplePage5"
                                     Icon="Help" />
+                <NavigationViewItem Content="Optionen"
+                                    Tag="SamplePage5"
+                                    Icon="Setting" />
             </NavigationView.FooterMenuItems>
             <Grid>
                 <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="640" />
-                    <ColumnDefinition Width="320" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="3*" />
+                    <ColumnDefinition Width="*" />
                 </Grid.ColumnDefinitions>
-                <ScrollViewer x:Name="ContentFrameViewer" Grid.Column="0">
-                    <Frame x:Name="ContentFrame">
+                <ScrollViewer x:Name="LeftSidebar"
+                              Grid.Column="0">
+                    <Frame x:Name="ContentFrameLeft">
                         <Frame.Background>
-                            <SolidColorBrush Color="SandyBrown" />
+                            <SolidColorBrush Color="AliceBlue" />
                         </Frame.Background>
                         <StackPanel Orientation="Vertical"
                                     HorizontalAlignment="Center">
@@ -103,6 +111,41 @@
                         </AppBarButton>
                     </CommandBar.SecondaryCommands>
                 </CommandBar>
+                <ScrollViewer x:Name="RightContentFrameViewer"
+                              Grid.Column="2">
+                    <Frame x:Name="RightContentFrame">
+                        <Frame.Background>
+                            <SolidColorBrush Color="DarkViolet" />
+                        </Frame.Background>
+                        <StackPanel Orientation="Vertical"
+                                    HorizontalAlignment="Center">
+                            <CommandBar Grid.Column="1"
+                                        Background="Transparent"
+                                        IsOpen="False"
+                                        DefaultLabelPosition="Right">
+                                <AppBarButton Icon="Add"
+                                              Label="Add" />
+                                <AppBarButton Icon="Edit"
+                                              Label="Edit" />
+                                <AppBarButton Icon="Share"
+                                              Label="Share" />
+                                <CommandBar.SecondaryCommands>
+                                    <AppBarButton Icon="Setting"
+                                                  Label="Settings">
+                                        <AppBarButton.KeyboardAccelerators>
+                                            <KeyboardAccelerator Modifiers="Control"
+                                                                 Key="I" />
+                                        </AppBarButton.KeyboardAccelerators>
+                                    </AppBarButton>
+                                </CommandBar.SecondaryCommands>
+                            </CommandBar>
+                            <TextBlock Text="Willkommen zur Debug-Version der Ahnenforscherin!"
+                                       FontSize="24"
+                                       FontWeight="Bold" />
+                            <Image Source="/Assets/SantaBenderBreakInPrison.jpg" />
+                        </StackPanel>
+                    </Frame>
+                </ScrollViewer>
             </Grid>
         </NavigationView>
     </Grid>
