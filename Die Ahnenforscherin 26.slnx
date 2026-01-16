@@ -4,12 +4,21 @@
     <Platform Name="x64" />
     <Platform Name="x86" />
   </Configurations>
+  <Folder Name="/src/">
+    <Project Path="Ahnenforscherin.Core/Ahnenforscherin.Core.csproj" Id="be02b336-9dd4-4dff-a374-59de1e7ad809" />
+    <Project Path="Ahnenforscherin.Data/Ahnenforscherin.Data.csproj" Id="464f0137-c753-473d-a768-4500ebe1d660" />
+    <Project Path="Ahnenforscherin.Export/Ahnenforscherin.Export.csproj" Id="7e3209d8-4184-4ee1-b865-c5b097349657" />
+    <Project Path="Ahnenforscherin.Import/Ahnenforscherin.Import.csproj" Id="1641d4ae-a8f9-47d3-be41-5f1528d3dae6" />
+    <Project Path="Die Ahnenforscherin 26/Die Ahnenforscherin 26.csproj">
+      <Platform Solution="*|ARM64" Project="ARM64" />
+      <Platform Solution="*|x64" Project="x64" />
+      <Platform Solution="*|x86" Project="x86" />
+    </Project>
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="Ahnenforscherin.Tests/Ahnenforscherin.Tests.csproj" Id="6e46e059-0cf5-4f45-aa44-0c6d08c7e55b" />
+  </Folder>
   <Project Path="Die Ahnenforscherin 26 (Package)/Die Ahnenforscherin 26 (Package).wapproj" Type="c7167f0d-bc9f-4e6e-afe1-012c56b48db5">
     <Deploy />
-  </Project>
-  <Project Path="Die Ahnenforscherin 26/Die Ahnenforscherin 26.csproj">
-    <Platform Solution="*|ARM64" Project="ARM64" />
-    <Platform Solution="*|x64" Project="x64" />
-    <Platform Solution="*|x86" Project="x86" />
   </Project>
 </Solution>
